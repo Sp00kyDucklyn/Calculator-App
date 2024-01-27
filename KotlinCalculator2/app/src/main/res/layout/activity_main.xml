@@ -8,7 +8,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/almostBlack"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:id="@+id/root">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Kotlin Calculator"
+        android:textColor="@color/white"
+        android:textAlignment="textStart"
+        android:background="@color/orange"
+        android:textSize="25dp"
+        android:paddingLeft="10dp"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -60,7 +71,9 @@
             android:text="⌫"/>
         <Button
             style="@style/buttonNumber"
-            android:text="" />
+            android:text="Color"
+            android:onClick="randomColor"
+            />
         <Button
             style="@style/buttonOperator"
             android:text="/"/>
@@ -139,3 +152,4 @@
             android:text="=" />
 
     </LinearLayout>
+</LinearLayout>

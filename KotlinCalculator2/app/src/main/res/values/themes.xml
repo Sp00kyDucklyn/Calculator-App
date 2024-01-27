@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.KotlinCalculator" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.KotlinCalculator" parent="Theme.AppCompat" />
+
+    <item name="colorPrimary" type="color">@color/orange</item>
+    <item name="colorPrimaryVariant" type="color">@color/almostBlack</item>
+    <item name="colorOnPrimary" type="color">@color/white</item>
+
 </resources>
